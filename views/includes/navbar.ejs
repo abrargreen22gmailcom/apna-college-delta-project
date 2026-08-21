@@ -28,7 +28,7 @@ font-size: 1rem;
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link" href="/listings">Explore</a>
+          <a class="nav-link navbar-orange-blue-underline" href="/listings">Explore &nbsp; Airbnb</a>
 
         </div>
 <div class="navbar-nav ms-auto">
@@ -38,13 +38,13 @@ font-size: 1rem;
     </form>
 </div>
         <div class="navbar-nav ms-auto">
-          <a class="nav-link" href="/listings/new">Airbnb your home</a>
+          <a class="nav-link navbar-orange-blue-underline" href="/listings/new">Create &nbsp; Listing</a>
           <% if(!currUser) { %>
-          <a class="nav-link" href="/signup"><b>Sign up</b></a>
-          <a class="nav-link" href="/login"><b>Log in</b></a>
+          <a class="btn btn-dark" href="/signup"><b>Sign Up</b></a>
+          <a class="btn btn-dark ms-2" href="/login"><b>Log In</b></a>
           <% } %>
           <% if(currUser) { %>
-          <a class="nav-link" href="/logout"><b>Log out</b></a>
+          <a class="btn btn-dark" href="/logout"><b>Log &nbsp; Out</b></a>
           <% } %>
         </div>
       </div>

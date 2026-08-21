@@ -20,8 +20,13 @@ body {
     font-size: 2rem;
 }
 
-.nav-link {
-    color: #222222 !important;
+.navbar-orange-blue-underline {
+    color: orange !important;
+    text-decoration: underline !important;
+    text-decoration-color: blue !important;
+    font-size: 1.1rem !important;
+    font-weight: bold !important;
+    text-decoration-thickness: 2px !important;
 }
 
 /* Footer */
@@ -102,7 +107,7 @@ body {
 /* Edit Page */
 .edit-btn {
     background-color: #fe424d !important;
-    border: none !important;
+    border: none !important;   
 }
 
 /* Show Page */
@@ -125,4 +130,7 @@ height: 400px;
 width: 80vh; 
 }
 
+.magenta-text {
+    color: magenta !important;
+}
 

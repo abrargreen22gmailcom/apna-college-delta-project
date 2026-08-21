@@ -24,7 +24,7 @@ const dbUrl = process.env.ATLASDB_URL;
   
 main()
 .then(() => {
-    console.log("connected to DB");
+    console.log("Connected to DB");
 })
 .catch((err) => {
     console.log(err);
@@ -50,7 +50,7 @@ const store = MongoStore.create({
 });
 
 store.on("error", () => {
-    console.log("ERROR in MONGO SESSION STORE", err);
+    console.log("ERROR IN MONGO SESSION STORE", err);
 });         
 
 const sessionOptions = {
@@ -111,5 +111,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(8080, () => {
-    console.log("server is listening to port 8080");
+    console.log("Server is listening to port 8080");
 });

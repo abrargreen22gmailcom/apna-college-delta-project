@@ -1,7 +1,7 @@
 <% layout("/layouts/boilerplate") %>
 <div class="row mt-3">
     <div class="col-8 offset-2">
-    <h3>Edit your Listing</h3>
+    <h3 class="magenta-text">Edit your Listing</h3>
     <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" novalidate class="needs-validation" enctype="multipart/form-data">
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
@@ -40,8 +40,7 @@ Original Listing Image<br>
             <input name="listing[location]" value="<%= listing.location %>" type="text" class="form-control" required/>
             <div class="invalid-feedback">Location should be valid</div>
         </div>
-        <br /><br />
-        <button class="btn btn-dark edit-btn mt-3">Edit</button>
+        <button class="btn btn-dark edit-btn mt-3 mb-3">Edit</button>
     </form>
 </div>
 </div>
