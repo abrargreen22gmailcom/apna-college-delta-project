@@ -49,7 +49,7 @@ const store = MongoStore.create({
     touchAfter: 24 * 3600,
 });
 
-store.on("error", () => {
+store.on("error", (err) => {
     console.log("ERROR IN MONGO SESSION STORE", err);
 });         
 
@@ -63,7 +63,11 @@ const sessionOptions = {
         maxAge: 7 * 24 * 60 * 60 * 1000,
         httpOnly: true
     },
-};
+}; 
+
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
   
 // app.get("/", (req, res) => {
 //     res.send("Hi, I am root");

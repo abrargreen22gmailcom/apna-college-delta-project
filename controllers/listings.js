@@ -20,7 +20,7 @@ module.exports.showListing = async (req, res) => {
     req.flash("error", "Listing you requested for does not exist!");
     return res.redirect("/listings");
     }
-    console.log(listing);
+    // console.log(listing);
     res.render("listings/show.ejs", { listing });
     };
 
@@ -40,7 +40,7 @@ newListing.image = {url, filename};
 // newListing.geometry = response.body.features[0].geometry;
 
     let savedListing = await newListing.save();
-console.log(savedListing);
+// console.log(savedListing);
     req.flash("success", "New Listing Created!");
     res.redirect("/listings");
     };
@@ -74,7 +74,7 @@ await listing.save();
 module.exports.destroyListing = async (req, res) => {
     let { id } = req.params;
     let deletedListing = await Listing.findByIdAndDelete(id);
-    console.log(deletedListing);
+    // console.log(deletedListing);
     req.flash("success", "Listing Deleted!");
     res.redirect("/listings");
     };
